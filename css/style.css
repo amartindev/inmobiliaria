@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "EB Garamond", serif;
+  background-color: rgb(255, 251, 245);
 }
 body h1 {
   font-size: 5rem;
@@ -10,13 +11,29 @@ body h1 {
   justify-content: flex-end;
 }
 
+.navbar-brand {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+
+a.nav-link {
+  font-size: 1.2rem;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
 .hero {
   display: flex;
 }
 .hero .containter-hero-titulo {
   width: 40%;
   text-align: left;
-  padding: 10% 4% 0 4%;
+  padding: 10% 4% 0 8%;
+}
+.hero .containter-hero-titulo .animate__animated.animate__fadeIn {
+  animation-duration: 2s;
 }
 .hero .containter-hero-titulo span {
   font-size: 4rem;
@@ -24,15 +41,35 @@ body h1 {
 .hero .container-hero-galeria {
   width: 60%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.hero .container-hero-galeria .animate__animated.animate__fadeIn {
+  animation-duration: 3s;
 }
 .hero .container-hero-imagen {
   overflow: hidden; /* Oculta contenido que exceda los límites del contenedor */
-  margin: 0 0.5rem;
-  border-radius: 5%;
+  margin: -5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1%;
 }
-.hero .container-hero-imagen img {
-  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
-  max-width: 300%;
+
+.banner {
+  background-image: url(/img/banner-fondo-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner .container-logo {
+  text-align: center;
+  padding: 15rem 0;
+}
+.banner .container-logo img {
+  height: 70px;
+}
+.banner .container-logo h2 {
+  font-size: 5rem;
+}
+
+.galeria {
+  height: 100rem;
+  background-color: aquamarine;
 }
