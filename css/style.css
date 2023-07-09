@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+  font-family: "EB Garamond", serif;
+}
+body h1 {
+  font-size: 5rem;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.hero {
+  display: flex;
+}
+.hero .containter-hero-titulo {
+  width: 40%;
+  text-align: left;
+  padding: 10% 4% 0 4%;
+}
+.hero .containter-hero-titulo span {
+  font-size: 4rem;
+}
+.hero .container-hero-galeria {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .container-hero-imagen {
+  overflow: hidden; /* Oculta contenido que exceda los límites del contenedor */
+  margin: 0 0.5rem;
+  border-radius: 5%;
+}
+.hero .container-hero-imagen img {
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  max-width: 300%;
+}
