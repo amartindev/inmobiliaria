@@ -221,7 +221,7 @@ a.nav-link:hover {
   backdrop-filter: blur(2px);
 }
 .timeline h3 {
-  padding-top: 3rem;
+  padding-top: 1rem;
   text-align: center;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
@@ -241,10 +241,17 @@ a.nav-link:hover {
 }
 .timeline iframe {
   border-radius: 5%;
+  width: 500px;
+  height: 300px;
 }
 .timeline .video-avance {
   padding-top: 1rem;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .timeline iframe {
+    width: 100%;
+  }
 }
 
 .timeline:before {
@@ -327,6 +334,14 @@ a.nav-link:hover {
   backdrop-filter: blur(3px);
   z-index: -1000;
 }
+@media (max-width: 767px) {
+  .people .asesor {
+    display: none;
+  }
+  .people .container-formulario {
+    width: 100%;
+  }
+}
 
 @keyframes kenburns-top {
   0% {
@@ -391,6 +406,20 @@ a.nav-link:hover {
 .container-footer .container-links:hover {
   background: linear-gradient(180deg, rgb(22, 24, 24) 0%, rgb(56, 60, 61) 50%, rgb(56, 60, 61) 100%);
 }
+@media (max-width: 767px) {
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-footer .container-logo {
+    flex: 1;
+    width: 100%;
+  }
+  .container-footer .container-links {
+    display: flex;
+    width: 100%;
+  }
+}
 
 .zonas {
   display: flex;
@@ -432,4 +461,20 @@ a.nav-link:hover {
 }
 .zonas .zonas-comunes-texto span {
   font-size: 1.3rem;
+}
+@media (max-width: 767px) {
+  .zonas {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .zonas .zonas-comunes-galeria {
+    width: 100%;
+  }
+  .zonas .zonas-comunes-galeria img {
+    height: 20rem;
+  }
+  .zonas .zonas-comunes-texto {
+    width: 100%;
+  }
 }
