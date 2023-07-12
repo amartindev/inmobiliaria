@@ -70,7 +70,7 @@ a.nav-link:hover {
   .hero {
     display: block;
     position: relative;
-    height: 110vh;
+    height: 100vh;
   }
   .hero .containter-hero-titulo {
     width: 100%;
@@ -82,6 +82,7 @@ a.nav-link:hover {
   }
   .hero .container-hero-galeria {
     width: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     position: absolute;
@@ -104,6 +105,13 @@ a.nav-link:hover {
 }
 .banner .container-logo h2 {
   font-size: 5rem;
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 100hv;
+    z-index: 2;
+    position: relative;
+  }
 }
 
 .galeria {
