@@ -165,7 +165,7 @@ a.nav-link:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 .timeline h3 {
   padding-top: 3rem;
@@ -201,16 +201,90 @@ a.nav-link:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
   z-index: -1;
 }
 
 .people {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  height: 500px;
-  background-color: #dae9ee;
+  height: 95vh;
+  font-size: 1.3rem;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.people .container-formulario {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  padding: 6rem 6rem;
+}
+.people .container-formulario .boton-cotizacion {
+  text-align: center;
+}
+.people .container-formulario .btn {
+  font-size: 1.5rem;
+}
+.people .container-formulario .etiqueta-datos {
+  font-size: 1rem;
+}
+.people .container-formulario label {
+  background: rgba(218, 233, 238, 0.05);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  -webkit-backdrop-filter: blur(12.8px);
+}
+.people .asesor {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.people .asesor img {
+  height: 70%;
+  border-radius: 5px;
+  border: 3px solid #dae9ee;
+}
+.people .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/banner-fondo-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: kenburns-top 10s ease-out infinite both;
+  z-index: -1000;
+}
+.people .background-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: -1000;
 }
 
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
 .container-footer {
   background: #383c3d;
   color: #dae9ee;
@@ -271,6 +345,7 @@ a.nav-link:hover {
   justify-content: space-between;
   width: 100%;
   height: 100vh;
+  text-shadow: 0 0 15px rgb(255, 255, 255);
 }
 .zonas .zonas-comunes-galeria {
   width: 50%;

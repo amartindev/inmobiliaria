@@ -395,7 +395,37 @@
     </section>
     <!--People-->
     <section class="people">
-      <p>we are the people</p>
+      <div class="container-formulario">
+        <form class="row g-3">
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Nombre Completo *</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" required>
+          </div>
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Correo electrónico *</label>
+            <input type="email" class="form-control" id="validationDefault02" value="" required>
+          </div>
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Celular o Teléfono *</label>
+            <input type="phone" class="form-control" id="validationDefault02" value="" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label etiqueta-datos" for="invalidCheck2">
+                Acepto y otorgo mi autorización para el tratamiento de datos personales en los términos que aparecen a continuación
+              </label>
+            </div>
+          </div>
+          <div class="col-12 boton-cotizacion">
+            <button class="btn btn-warning" type="submit">Solicitar Cotización</button>
+          </div>
+        </form>
+      </div>
+      <div class="asesor">
+          <img src="/img/familia.jpg">
+      </div>
+      <div class="background-image"></div>
     </section>
     <!--footer-->
     <footer>
@@ -446,7 +476,6 @@
     <script src="/js/mini-galeria.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="/js/lightbox.js"></script>
-
 
 </body>
 </html>
