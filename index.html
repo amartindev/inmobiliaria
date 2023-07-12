@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css">
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
     <script src="/js/hero.js"></script>
+  <!--Lightbox-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--Titulo-->
     <title>Tarazona Serena del Mar</title>
   <!-- Fonts -->
@@ -24,12 +26,14 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
   <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
     <!-- barra de navegacion -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-glass">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-glass animate__animated animate__fadeInLeftBig">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
+            <img src="/img/t-mobile.png" alt="T" class="logo-navbar">
             Tarazona
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +51,7 @@
                 <a class="nav-link" aria-current="page" href="#">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Showroom Virtual</a>
+                <a class="nav-link" target="_blank" href="https://amarilo.com.co/vista360/colombia/vivienda/cartagena/serena_del_mar/vernazza/tipo_d/index.html">Showroom Virtual</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">Avance Obra</a>
@@ -76,25 +80,25 @@
       <div class="containter-hero-titulo">
         <h1 class="hero-titulo animate__animated animate__fadeIn">Tarazona<span><br>Serena del Mar</span></h1>
       </div>
-      <div class="container-hero-galeria" id="myGallery" data-gallery="true">
-        <div class="container-hero-imagen animate__animated animate__fadeIn">
-          <a href="/img/hero-01 - sized.jpg">
-            <img src="/img/hero-01.jpg" alt="">
+      <div class="container-hero-galeria">
+        <div class="container-hero-imagen animate__animated animate__fadeInUp">
+          <a class="example-image-link" href="/img/hero-01 - sized.jpg" data-lightbox="example-1">
+            <img class="example-image" src="/img/hero-01.jpg" alt="" />
           </a>
         </div>
-        <div class="container-hero-imagen animate__animated animate__fadeIn">
-          <a href="/img/hero-02 - sized.jpg">
-            <img src="/img/hero-02.jpg" alt="">
+        <div class="container-hero-imagen animate__animated animate__fadeInDown">
+          <a class="example-image-link" href="/img/hero-02 - sized.jpg" data-lightbox="example-1">
+            <img class="example-image" src="/img/hero-02.jpg" alt="" />
           </a>
         </div>
-        <div class="container-hero-imagen animate__animated animate__fadeIn">
-          <a href="/img/hero-03 - sized.jpg">
-            <img src="/img/hero-03.jpg" alt="">
+        <div class="container-hero-imagen animate__animated animate__fadeInUp">
+          <a class="example-image-link" href="/img/hero-03 - sized.jpg" data-lightbox="example-1">
+            <img class="example-image" src="/img/hero-03.jpg" alt="" />
           </a>
         </div>
-        <div class="container-hero-imagen animate__animated animate__fadeIn">
-          <a href="/img/hero-04 - sized.jpg">
-            <img src="/img/hero-04.jpg" alt="">
+        <div class="container-hero-imagen animate__animated animate__fadeInDown">
+          <a class="example-image-link" href="/img/hero-04 - sized.jpg" data-lightbox="example-1">
+            <img class="example-image" src="/img/hero-04.jpg" alt="" />
           </a>
         </div>
       </div>
@@ -127,10 +131,11 @@
                   <li>Área Balcón : 6m<sup>2</sup></li>
                   <li>Habitaciones: 2</li>
                   <li>N° Baños: 2</li>
-                  <li>Estar: 1</li>
                 </ul>
                 <div class="vista360">
-                  <button type="button" class="btn btn-warning">Vista 360°</button>
+                  <a href="https://amarilo.com.co/vista360/colombia/vivienda/cartagena/serena_del_mar/palladio/Tipo_A_73_m2/index.html" target="_blank" >
+                    <button type="button" class="btn btn-warning">Vista 360°</button>
+                  </a>
                 </div>
               </div>
               <div class="container-galeria-apto animate__animated animate__fadeInRightBig">
@@ -145,22 +150,11 @@
               </div>
             </div>
             <div class="fila-inferior">
-              <div class="container-foto-edificio animate__animated animate__fadeInLeftBig">
-                <h4>Zonas Comunes</h4>
-                <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                  <swiper-slide><img src="/img/apto-tipoB-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio04.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio04.jpg" alt=""></swiper-slide>
-                </swiper-container>
-              </div>
               <div class="container-planos animate__animated animate__fadeInUpBig">
                 <h4>Plano</h4>
-                <img src="/img/apto-tipoA-plano.jpg" alt="">
+                <a class="example-image-link" href="/img/apto-tipoA-plano.jpg" data-lightbox="example-2">
+                  <img class="example-image" src="/img/apto-tipoA-plano.jpg" alt="Plano Apartamento A" />
+                </a>
               </div>
             </div>
           </div>
@@ -182,7 +176,9 @@
                   <li>N° Baños: 3</li>
                 </ul>
                 <div class="vista360">
-                  <button type="button" class="btn btn-warning">Vista 360°</button>
+                  <a href="https://amarilo.com.co/vista360/colombia/vivienda/cartagena/serena_del_mar/palladio/Tipo_B_91_m2/index.html" target="_blank" >
+                    <button type="button" class="btn btn-warning">Vista 360°</button>
+                  </a>
                 </div>
               </div>
               <div class="container-galeria-apto animate__animated animate__fadeInRightBig">
@@ -197,22 +193,11 @@
               </div>
             </div>
             <div class="fila-inferior">
-              <div class="container-foto-edificio animate__animated animate__fadeInLeftBig">
-                <h4>Zonas Comunes</h4>
-                <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                  <swiper-slide><img src="/img/apto-tipoA-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio04.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio04.jpg" alt=""></swiper-slide>
-                </swiper-container>
-              </div>
               <div class="container-planos animate__animated animate__fadeInUpBig">
                 <h4>Plano</h4>
-                <img src="/img/apto-tipoB-plano.jpg" alt="">
+                <a class="example-image-link" href="/img/apto-tipoB-plano.jpg" data-lightbox="example-3">
+                  <img class="example-image" src="/img/apto-tipoB-plano.jpg" alt="Plano Apartamento B" />
+                </a>
               </div>
             </div>
           </div>
@@ -234,7 +219,9 @@
                   <li>N° Baños: 2</li>
                 </ul>
                 <div class="vista360">
-                  <button type="button" class="btn btn-warning">Vista 360°</button>
+                  <a href="https://amarilo.com.co/vista360/colombia/vivienda/cartagena/serena_del_mar/vernazza/tipo_d/index.html" target="_blank" >
+                    <button type="button" class="btn btn-warning">Vista 360°</button>
+                  </a>
                 </div>
               </div>
               <div class="container-galeria-apto animate__animated animate__fadeInRightBig">
@@ -249,22 +236,11 @@
               </div>
             </div>
             <div class="fila-inferior">
-              <div class="container-foto-edificio animate__animated animate__fadeInLeftBig">
-                <h4>Zonas Comunes</h4>
-                <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                  <swiper-slide><img src="/img/apto-tipoA-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio04.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio04.jpg" alt=""></swiper-slide>
-                </swiper-container>
-              </div>
               <div class="container-planos animate__animated animate__fadeInUpBig">
                 <h4>Plano</h4>
-                <img src="/img/apto-tipoC-plano.jpg" alt="">
+                <a class="example-image-link" href="/img/apto-tipoC-plano.jpg" data-lightbox="example-4">
+                  <img class="example-image" src="/img/apto-tipoC-plano.jpg" alt="Plano Apartamento C" />
+                </a>
               </div>
             </div>
           </div>
@@ -286,7 +262,9 @@
                   <li>N° Baños: 2</li>
                 </ul>
                 <div class="vista360">
-                  <button type="button" class="btn btn-warning">Vista 360°</button>
+                  <a href="https://amarilo.com.co/vista360/colombia/vivienda/cartagena/serena_del_mar/palladio/Tipo_A_73_m2/index.html" target="_blank" >
+                    <button type="button" class="btn btn-warning">Vista 360°</button>
+                  </a>
                 </div>
               </div>
               <div class="container-galeria-apto animate__animated animate__fadeInRightBig">
@@ -301,22 +279,11 @@
               </div>
             </div>
             <div class="fila-inferior">
-              <div class="container-foto-edificio animate__animated animate__fadeInLeftBig">
-                <h4>Zonas Comunes</h4>
-                <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                  <swiper-slide><img src="/img/apto-tipoB-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio04.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio01.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio02.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoA-edificio03.jpg" alt=""></swiper-slide>
-                  <swiper-slide><img src="/img/apto-tipoB-edificio04.jpg" alt=""></swiper-slide>
-                </swiper-container>
-              </div>
               <div class="container-planos animate__animated animate__fadeInUpBig">
                 <h4>Plano</h4>
-                <img src="/img/apto-tipoD-plano.jpg" alt="">
+                <a class="example-image-link" href="/img/apto-tipoD-plano.jpg" data-lightbox="example-5">
+                  <img class="example-image" src="/img/apto-tipoD-plano.jpg" alt="Plano Apartamento D" />
+                </a>
               </div>
             </div>
           </div>
@@ -325,11 +292,161 @@
         <div id="next-btn" class="nav-btn">&#8250;</div>
       </div>
     </section>
+    <!--Timeline-->
+    <section class="timeline">
+      <div class="timeline-container">
+        <h3>Avances de la obra</h3>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+      centered-slides="true" space-between="0" grab-cursor="true">
+          <swiper-slide>
+            <h4>Enero</h4>
+            <a class="example-image-link" href="/img/avance-obra-01.jpg" data-lightbox="example-6">
+              <img class="example-image" src="/img/avance-obra-01.jpg" alt="" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <h4>Febrero</h4>
+            <a class="example-image-link" href="/img/avance-obra-02.jpg" data-lightbox="example-6">
+              <img class="example-image" src="/img/avance-obra-02.jpg" alt="" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <h4>Marzo</h4>
+            <a class="example-image-link" href="/img/avance-obra-03.jpg" data-lightbox="example-6">
+              <img class="example-image" src="/img/avance-obra-03.jpg" alt="" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <h4>Abril</h4>
+            <a class="example-image-link" href="/img/avance-obra-04.jpg" data-lightbox="example-6">
+              <img class="example-image" src="/img/avance-obra-04.jpg" alt="" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <h4>Mayo</h4>
+            <a class="example-image-link" href="/img/avance-obra-05.jpg" data-lightbox="example-6">
+              <img class="example-image" src="/img/avance-obra-05.jpg" alt="" />
+            </a>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="video-avance">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/-lpu5XZ0el4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!--Zonas comunes-->
+    <section class="zonas">
+      <div class="zonas-comunes-galeria">
+        <div class="animate__animated animate__fadeInLeftBig">
+          <swiper-container class="mySwiper" navigation="false" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="/img/apto-tipoB-edificio01.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoA-edificio02.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoB-edificio03.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoA-edificio04.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoA-edificio01.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoB-edificio02.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoA-edificio03.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="/img/apto-tipoB-edificio04.jpg" alt=""></swiper-slide>
+          </swiper-container>
+        </div>
+
+      </div>
+      <div class="zonas-comunes-texto">
+        <h4>Zonas Comunes</h4>
+        <ul>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/cancha_recreativa-apartamentos-amarilo.png">
+            <span class="zonas-lista">Cancha recreativa no reglamentaria</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/piscina-club-hause-amarilo_0.png">
+            <span class="zonas-lista">Piscina para adultos y niños no reglamentaría</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/turco-amarilo.png">
+              <span class="zonas-lista">Turco y sauna</span>
+          </li>
+          <li class="zonaIndv">
+              <img src="https://amarilo.com.co/sites/default/files/vista-al-gran-canl.png">
+              <span class="zonas-lista">Vista al gran canal</span>
+          </li>
+          <li class="zonaIndv">
+              <img src="https://amarilo.com.co/sites/default/files/logo-gym_0.png">
+              <span class="zonas-lista">Gimnasio semidotado</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/39-solarium_mesa_de_trabajo_1.png">
+            <span class="zonas-lista">Solarium</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/splash_pad_0.png">
+            <span class="zonas-lista">Splash pad</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/zona_de_meditacion_0.png">
+            <span class="zonas-lista">Zona de meditación</span>
+          </li>
+          <li class="zonaIndv">
+            <img src="https://amarilo.com.co/sites/default/files/bbq_0_mesa_de_trabajo-1-amarilo_0.png">
+            <span class="zonas-lista">Zona BBQ</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--People-->
+    <section class="people">
+      <p>we are the people</p>
+    </section>
+    <!--footer-->
+    <footer>
+    <div class="container-footer">
+      <div class="container-footer-part container-logo">
+        <a href="#"><img src="/img/t-mobile.png" alt=""></a>
+        <a href="#"><h2>Tarazona</h2></a>
+        <p>Contact Center 601 634 0000</p>
+        <p>Línea Gratuita 01 8000 122442</p>
+        <p><br><a href="mailto:servicioalcliente@amarilo.com">servicioalcliente@tarazona.com</a></p>
+        <p><br>Calle 90 # 11A - 27, Bogotá - Colombia</p>
+        <p class="copyright-texto">© Tarazona 2022</p>
+      </div>
+      <div class="container-footer-part container-links">
+        <h5>Producto</h5>
+        <ul>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Showroom</a></li>
+          <li><a href="#">Avances</a></li>
+          <li><a href="#">Diseños</a></li>
+        </ul>
+      </div>
+      <div class="container-footer-part container-links">
+        <h5>General</h5>
+        <ul>
+          <li><a href="#">Conocenos</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Sala de prensa</a></li>
+          <li><a href="#">Clientes</a></li>
+        </ul>
+      </div>
+      <div class="container-footer-part container-links">
+        <h5>Social</h5>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Linea Ética</a></li>
+        </ul>
+      </div>
+    </div>
+    </footer>
+    <!--Scripts-->
     <script type="module">
       import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/+esm';
     </script>
     <script src="/js/galeria.js"></script>
     <script src="/js/mini-galeria.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="/js/lightbox.js"></script>
+
+
 </body>
 </html>
