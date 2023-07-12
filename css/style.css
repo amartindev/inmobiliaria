@@ -108,7 +108,6 @@ a.nav-link:hover {
 }
 @media (max-width: 767px) {
   .banner {
-    height: 100hv;
     z-index: 2;
     position: relative;
   }
@@ -189,6 +188,30 @@ a.nav-link:hover {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .section.active {
+    display: block;
+    height: auto;
+  }
+  .section.active .fila-superior {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .section.active .fila-superior .container-texto {
+    width: 100%;
+  }
+  .section.active .fila-superior .container-galeria-apto {
+    width: 100%;
+  }
+  .section.active .fila-inferior {
+    display: block;
+  }
+  .section.active .fila-inferior .container-planos {
+    display: block;
+    width: 100%;
+  }
+}
 .timeline {
   padding: 3rem 0;
   background-image: url(/img/banner-fondo-02.jpg);
